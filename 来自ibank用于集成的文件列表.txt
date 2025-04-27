@@ -1,0 +1,36 @@
+api/index.py
+app/(dashboard)
+	/(login)
+	/api/download
+		/files
+		/stripe
+		/upload
+	重复layout.tsx
+	重复not-found.tsx——blog的更精致
+	globals.css
+	favicon.ico
+conponents/ui/*
+		     /ConversionLibrary.tsx
+		     /UploadArea.tsx
+lib/auth/*
+    /db/*
+    /payments/*
+    utils.ts
+components.json
+drizzle.config.ts
+middleware.ts
+内容一致next-env.d.ts
+next.config.ts——blog项目中的next.config.ts中，不知道如何添加rewrites部分——blog项目重写了所有的request中的headers，api中的session-id是用headers传递的，考虑改为用formdata传递。
+package.json——blog项目中添加ibank中没有的
+内容一致postcss.config.mjs
+重复tsconfig.json——
+	"target": "ES6",——ibank是"ESNext"——感觉区别不大
+	"strict": false,——ibank是"true"
+	"forceConsistentCasingInFileNames": true,——ibank没有
+	"composite": true,——ibank没有
+	"strictNullChecks": true——ibank没有
+	"paths": {	——ibank就全包括了
+      "@/*": [
+        "./*"
+      ]
+    }
